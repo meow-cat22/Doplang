@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Padukuhan Doplang — Girikarto, Panggang, Gunungkidul</title>
+<meta name="description" content="Website resmi Padukuhan Doplang: sejarah, struktur organisasi, potensi UMKM, kelembagaan, dan kegiatan warga.">
+
+<!--
+  CARA MENGISI WEBSITE INI
+  =========================
+  1. Cari tanda [ISI: ...] di file ini — itu adalah teks placeholder yang perlu
+     kamu ganti dengan data asli dukuh (nama pengurus, sejarah, jumlah KK, dll).
+  2. Foto: ganti file di folder assets/ dengan foto asli. Nama file sudah
+     disiapkan di bawah (contoh: assets/hero.jpg, assets/umkm-1.jpg).
+  3. Warna, jenis huruf, dan tata letak diatur di style.css — tidak perlu
+     diutak-atik kalau cuma mau ganti teks/foto.
+  4. Semua bagian sudah diberi id (misal id="sejarah") supaya menu navigasi
+     bisa langsung meloncat ke bagian itu.
+-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#konten-utama">Langsung ke isi halaman</a>
+
+<!-- ============ HEADER / NAVIGASI ============ -->
+<header class="site-header" id="header">
+  <div class="header-inner">
+    <a href="#beranda" class="brand">
+      <span class="brand-mark" aria-hidden="true">
+        <img src="LOGO_Doplang.png" alt="" width="36" height="36">
+      </span>
+      <span class="brand-text">Padukuhan<br>Doplang</span>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Buka menu navigasi">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="primary-nav" id="primaryNav">
+      <a href="#beranda">Beranda</a>
+      <a href="#sejarah">Sejarah</a>
+      <a href="#struktur">Struktur</a>
+      <a href="#potensi">Potensi &amp; UMKM</a>
+      <a href="#kelembagaan">Kelembagaan</a>
+      <a href="#kegiatan">Kegiatan</a>
+      <a href="#kontak" class="nav-cta">Hubungi Kami</a>
+    </nav>
+  </div>
+</header>
+
+<main id="konten-utama">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="beranda">
+    <div class="hero-illustration" aria-hidden="true">
+      <svg viewBox="0 0 1200 400" preserveAspectRatio="none">
+        <path d="M0,400 L0,260 Q120,190 240,230 T480,220 Q560,180 640,230 T900,215 Q1000,180 1080,225 T1200,230 L1200,400 Z" fill="var(--primary)" opacity="0.9"/>
+        <path d="M0,400 L0,300 Q150,260 300,290 T600,280 Q720,250 840,290 T1200,285 L1200,400 Z" fill="var(--primary-light)" opacity="0.55"/>
+        <!-- pohon kelapa sederhana -->
+        <g transform="translate(160,150)">
+          <rect x="-4" y="0" width="8" height="90" fill="var(--ink)" opacity="0.35"/>
+          <path d="M0,0 Q-35,-20 -55,-5 M0,0 Q-30,-35 -15,-55 M0,0 Q10,-40 35,-30 M0,0 Q35,-10 55,10 M0,0 Q20,20 30,45" stroke="var(--ink)" opacity="0.35" stroke-width="6" fill="none" stroke-linecap="round"/>
+        </g>
+        <g transform="translate(1020,170)">
+          <rect x="-3" y="0" width="6" height="70" fill="var(--ink)" opacity="0.3"/>
+          <path d="M0,0 Q-28,-16 -44,-4 M0,0 Q-24,-28 -12,-44 M0,0 Q8,-32 28,-24 M0,0 Q28,-8 44,8" stroke="var(--ink)" opacity="0.3" stroke-width="5" fill="none" stroke-linecap="round"/>
+        </g>
+      </svg>
+    </div>
+
+    <div class="hero-content wrap">
+      <p class="eyebrow">Padukuhan Doplang &middot; Kalurahan Girikarto &middot; Kapanewon Panggang &middot; Gunungkidul, DIY</p>
+      <h1>Selamat Datang di Doplang</h1>
+      <p class="hero-lede">Terletak di lereng perbukitan Gunungkidul, Doplang dikenal dengan kearifan lokal dan semangat gotong royong warganya. Dari hasil bumi yang dipakai sehari-hari, hingga kehangatan warga dalam menjaga tradisi, Doplang adalah gambaran kecil kekuatan komunitas pedesaan Yogyakarta.</p>
+
+      <div class="hero-facts">
+        <div class="fact-chip">
+          <span class="fact-number">4</span>
+          <span class="fact-label">RT</span>
+        </div>
+        <div class="fact-chip">
+          <span class="fact-number">1</span>
+          <span class="fact-label">RW</span>
+        </div>
+        <div class="fact-chip">
+          <span class="fact-number">98 KK</span>
+          <span class="fact-label">Kepala Keluarga</span>
+        </div>
+        <div class="fact-chip">
+          <span class="fact-number">373 Jiwa</span>
+          <span class="fact-label">Jumlah Penduduk</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- pembatas bergerigi khas genteng -->
+  <div class="tile-divider" aria-hidden="true"></div>
+
+  <!-- ============ SEJARAH ============ -->
+  <section class="section" id="sejarah">
+    <div class="wrap section-grid">
+      <div class="section-heading">
+        <span class="section-eyebrow">Asal-usul</span>
+        <h2>Sejarah Dukuh Doplang</h2>
+      </div>
+      <div class="section-body">
+        <p>Konon, jauh sebelum menjadi padukuhan seperti sekarang, tanah Doplang hanyalah bagian dari rimba belantara di selatan Gunungkidul. Nama dukuh ini tak lepas dari kisah seorang leluhur bernama Ki Rompak Baya, yang oleh warga setempat dijuluki mBah Kawitan — sang cikal bakal. Beliau dipercaya sebagai salah satu prajurit Kerajaan Majapahit yang melarikan diri ke selatan setelah keruntuhan kerajaan itu, mencari tempat aman jauh dari kejaran musuh. Di tanah yang kelak dikenal sebagai Doplang inilah Ki Rompak Baya berhenti, membuka lahan, dan menetap — menandai awal mula kehidupan di dukuh ini.</p>
+        <p>Kisah tentang masa itu masih hidup dalam legenda yang diwariskan turun-temurun, salah satunya cerita Ghurit Weshi — seorang prajurit Majapahit lain yang juga singgah di kawasan ini, tinggal bersama Ki Rompak Boyo, dan menikah dengan gadis setempat bernama Roro Keniken. Dari generasi ke generasi, cerita-cerita semacam ini menjadi pengingat bahwa Doplang tumbuh dari jejak para pelarian yang mencari kehidupan baru, lalu perlahan berkembang menjadi permukiman dengan ikatan kekerabatan yang erat. Kini, warisan itu masih terasa dalam gotong royong warga, dan Doplang berkembang menjadi salah satu padukuhan di Kalurahan Girikarto dengan penduduk yang hidup rukun di tengah perbukitan Gunungkidul.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="tile-divider tile-divider--flip" aria-hidden="true"></div>
+
+  <!-- ============ STRUKTUR ORGANISASI ============ -->
+  <section class="section section--tint" id="struktur">
+    <div class="wrap">
+      <div class="section-heading section-heading--center">
+        <span class="section-eyebrow">Pemerintahan Dukuh</span>
+        <h2>Struktur Organisasi</h2>
+        <p class="section-intro">[ISI: kalimat singkat penjelas, misalnya periode jabatan atau garis besar susunan pemerintahan dukuh.]</p>
+      </div>
+
+      <div class="org-chart">
+  <div class="org-card org-card--lead">
+    <p class="org-name">[Bu Winarni]</p>
+    <p class="org-role">Kepala Dukuh Doplang</p>
+  </div>
+
+  <div class="org-row">
+    <div class="org-card">
+      <p class="org-name">Mujiyono</p>
+      <p class="org-role">Ketua RW 07</p>
+    </div>
+    <div class="org-card">
+      <p class="org-name">Sugiyono</p>
+      <p class="org-role">Ketua RT 01</p>
+    </div>
+    <div class="org-card">
+      <p class="org-name">Wintolo</p>
+      <p class="org-role">Ketua RT 02</p>
+    </div>
+    <div class="org-card">
+      <p class="org-name">Siswanto</p>
+      <p class="org-role">Ketua RT 03</p>
+    </div>
+    <div class="org-card">
+      <p class="org-name">Supanto</p>
+      <p class="org-role">Ketua RT 04</p>
+    </div>
+    <div class="org-card">
+      <p class="org-name">Mujiyono</p>
+      <p class="org-role">Ketua LPMP</p>
+    </div>
+    <div class="org-card">
+      <p class="org-name">Winarni</p>
+      <p class="org-role">Ketua PKK</p>
+    </div>
+    <div class="org-card">
+      <p class="org-name">Priyadi</p>
+      <p class="org-role">Ketua Karang Taruna</p>
+    </div>
+  </div>
+
+  <img class="org-group-photo" src="assets/Struktur_Padukuhan.jpg" alt="Bagan struktur organisasi Padukuhan Doplang berisi foto Dukuh, Ketua RW, Ketua RT 01-04, Ketua LPMP, Ketua PKK, dan Ketua Karang Taruna">
+</div>
+<p class="hint-text">Tips: tambah atau hapus kartu di atas dengan menyalin blok <code>.org-card</code> di file index.html sesuai jumlah RT/RW yang ada. Ganti kotak foto bersama di bawah struktur dengan tag <code>&lt;img&gt;</code> berisi foto bersama seluruh pengurus.</p>
+    <div>
+  </section>
+
+  <div class="tile-divider" aria-hidden="true"></div>
+
+  <!-- ============ POTENSI & UMKM ============ -->
+  <section class="section" id="potensi">
+    <div class="wrap">
+      <div class="section-heading section-heading--center">
+        <span class="section-eyebrow">Ekonomi Warga</span>
+        <h2>Potensi &amp; UMKM</h2>
+        <p class="section-intro">ISI: kalimat singkat tentang kekuatan ekonomi dukuh, misalnya hasil bumi, kerajinan, atau usaha rumahan warga.</p>
+      </div>
+
+      <div class="umkm-table-wrap">
+  <table class="umkm-table">
+    <thead>
+      <tr>
+        <th scope="col">Kategori</th>
+        <th scope="col">Nama Usaha / Produk</th>
+        <th scope="col">Keterangan</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="umkm-group-row"><th colspan="3">RT 01</th></tr>
+      <tr><td>[ISI: mis. Olahan Kelapa]</td><td>[ISI: Nama produk, mis. VCO Kelapa Doplang]</td><td>[ISI: bahan, keunggulan, siapa yang mengelola]</td></tr>
+      <tr><td>Jasa</td><td>Penjahit</td><td>Supardi</td></tr>
+      <tr><td>Pedagang</td><td>Es The Jumbo</td><td>Sulistiyanto</td></tr>
+      <tr><td>Peternakan</td><td>Peternak Ayam Broiler</td><td>Sumardini</td></tr>
+      <tr><td>Warung/Toko</td><td>Warung Sembako dan Bengkel</td><td>Purwanto Utomo</td></tr>
+      <tr><td>Warung/Toko</td><td>Warung Sembako Dan Jual Arang</td><td>Gerai Khairul Anam</td></tr>
+      <tr><td>Warung/Toko</td><td>Warung Sembako Dan Cucian Mobil</td><td>Mugiyanto</td></tr>
+      <tr><td>Jasa</td><td>Suntik Ternak</td><td>Yanto Utomo</td></tr>
+      <tr><td>Warung/Toko</td><td>Toko Pakaian</td><td>Paryadi</td></tr>
+      <tr><td>Warung/Toko</td><td>Toko Isnani Material</td><td>Purwadi</td></tr>
+
+      <tr class="umkm-group-row"><th colspan="3">RT 02</th></tr>
+      <tr><td>[ISI: mis. Kerajinan]</td><td>[ISI: nama produk]</td><td>[ISI: keterangan]</td></tr>
+      <tr><td>Warung/Toko</td><td>Warung Kelontong</td><td>Sumaryono</td></tr>
+      <tr><td>Produksi</td><td>Produksi Tempe</td><td>Tukadi</td></tr>
+      <tr><td>Produksi</td><td>Produksi Tempe</td><td>Sutarto</td></tr>
+      <tr><td>Jasa</td><td>Penginapan Dan Transportasi</td><td>Sumardiyono</td></tr>
+      <tr><td>Pedagang</td><td>Chicken Kriuk</td><td>Mujiyono</td></tr>
+      <tr><td>Jasa</td><td>Pijat Terapi</td><td>Priyadi</td></tr>
+      <tr><td>Warung/Toko</td><td>Warung Kelontong</td><td>Sumaryono</td></tr>
+      <tr><td>Warung/Toko</td><td>Gudang Material</td><td>Purwadi</td></tr>
+
+      <tr class="umkm-group-row"><th colspan="3">RT 03</th></tr>
+      <tr><td>[ISI: mis. Olahan Kelapa]</td><td>[ISI: Nama produk, mis. Briket Tempurung Kelapa]</td><td>[ISI: keterangan]</td></tr>
+      <tr><td>Jasa</td><td>Bimbel KHE</td><td>Winarti Utomo</td></tr>
+      <tr><td>Produksi</td><td>Olahan Singkong dan Pisang</td><td>Karyanta</td></tr>
+      <tr><td>Warung/Toko</td><td>Warung Kelontong</td><td>Supardiyem</td></tr>
+      <tr><td>Pedagang</td><td>Rumah Makan Dan Penginapan</td><td>Ismanto</td></tr>
+      <tr><td>Peternakan</td><td>Peternak Ayam Broiler</td><td>Yohanes Feri Sugiri</td></tr>
+      <tr><td>Jasa</td><td>Laundry</td><td>Mardiutomo</td></tr>
+      <tr><td>Jasa</td><td>Penjahit Dan Meuble</td><td>Rusmanto</td></tr>
+      <tr><td>Jasa</td><td>Penjahit</td><td>Taman</td></tr>
+      <tr><td>Peternakan</td><td>Peternak Ayam Broiler</td><td>Wardi Utomo</td></tr>
+      <tr><td>Jasa</td><td>Penginapan</td><td>Supartilah</td></tr>
+      <tr><td>Warung/Toko</td><td>Warung Sembako</td><td>Nita</td></tr>
+
+      <tr class="umkm-group-row"><th colspan="3">RT 04</th></tr>
+      <tr><td>[ISI: kategori]</td><td>[ISI: nama produk]</td><td>[ISI: keterangan]</td></tr>
+      <tr><td>Pengepul</td><td>Tengkulak Pisang</td><td>Suparto</td></tr>
+      <tr><td>Pedagang</td><td>Dagang Kayu</td><td>Tumijo</td></tr>
+      <tr><td>Warung/Toko</td><td>Warung Kelontong</td><td>Sutriyono</td></tr>
+      <tr><td>Pengepul</td><td>Tengkulak Pisang</td><td>Darmo Suwito</td></tr>
+    </tbody>
+  </table>
+</div>
+<p class="hint-text">Tips: tambah baris baru dengan menyalin blok <code>&lt;tr&gt;&lt;td&gt;...&lt;/td&gt;&lt;/tr&gt;</code> di RT yang sesuai — nggak perlu hitung <code>rowspan</code> lagi. Untuk RT baru, salin blok <code>&lt;tr class="umkm-group-row"&gt;</code> beserta baris-barisnya.</p>
+    </div>
+  </section>
+
+  <div class="tile-divider tile-divider--flip" aria-hidden="true"></div>
+
+  <!-- ============ KELEMBAGAAN ============ -->
+  <section class="section section--tint" id="kelembagaan">
+    <div class="wrap">
+      <div class="section-heading section-heading--center">
+        <span class="section-eyebrow">Organisasi Warga</span>
+        <h2>Kelembagaan yang Aktif</h2>
+      </div>
+
+      <div class="lembaga-grid">
+        <div class="lembaga-item">
+          <div class="lembaga-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48"><circle cx="24" cy="16" r="8" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M8 42c0-9 7-16 16-16s16 7 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Karang Taruna</h3>
+          <p>Organisasi pemuda, anggotanya didominasi oleh pemuda yang sudah menikah</p>
+        </div>
+        <div class="lembaga-item">
+          <div class="lembaga-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48"><circle cx="24" cy="16" r="8" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M8 42c0-9 7-16 16-16s16 7 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Ketua LPMP</h3>
+          <p>Organisasi yang mengelola program pembangunan masyarakat</p>
+        </div>
+        <div class="lembaga-item">
+          <div class="lembaga-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48"><path d="M24 6l6 12 13 2-9.5 9 2 13L24 36l-11.5 6 2-13L5 20l13-2z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>PKK</h3>
+          <p> menaungi warga wanita di lingkungan setempat</p>
+        </div>
+        <div class="lembaga-item">
+          <div class="lembaga-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48"><rect x="8" y="10" width="32" height="28" rx="2" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M8 18h32M17 10v-4M31 10v-4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Irmas</h3>
+          <p>Organisasi remaja masjid tergabung sebagai bagian dari Al-Muharib dan remaja yang belum menikah</p>
+        </div>
+        <div class="lembaga-item">
+          <div class="lembaga-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48"><rect x="8" y="10" width="32" height="28" rx="2" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M8 18h32M17 10v-4M31 10v-4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Kelompok Wanita Tani</h3>
+          <p>menaungi petani wanita di Doplang</p>
+        </div>
+        <div class="lembaga-item">
+          <div class="lembaga-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48"><rect x="8" y="10" width="32" height="28" rx="2" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M8 18h32M17 10v-4M31 10v-4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Posyandu "Cut Nyak Dien</h3>
+          <p>Berisikan layanan kesehatan ibu dan anak di Doplang</p>
+        </div>
+      </div>
+      </div>
+      
+      <p class="hint-text">Tambahkan lembaga lain (mis. Kelompok Ternak, Remaja Masjid) dengan menyalin blok <code>.lembaga-item</code>.</p>
+    </div>
+  </section>
+
+  <div class="tile-divider" aria-hidden="true"></div>
+
+  <!-- ============ GALERI KEGIATAN ============ -->
+  <section class="section" id="kegiatan">
+    <div class="wrap">
+      <div class="section-heading section-heading--center">
+        <span class="section-eyebrow">Dokumentasi</span>
+        <h2>Kegiatan Warga</h2>
+        <p class="section-intro">"Sebagian momen kebersamaan warga Doplang sepanjang tahun ini."</p>
+      </div>
+
+      <div class="gallery-grid">
+  <div class="gallery-item gallery-item--tall">
+    <img src="assets/IMG_3754.JPG.jpeg" alt="Deskripsikan kegiatan di foto ini">
+  </div>
+  <div class="gallery-item">
+    <img src="assets/IMG_3755.JPG.jpeg" alt="Deskripsikan kegiatan di foto ini">
+  </div>
+  <div class="gallery-item">
+    <img src="assets/IMG_3756.JPG.jpeg" alt="Deskripsikan kegiatan di foto ini">
+  </div>
+  <div class="gallery-item">
+    <img src="assets/IMG_3757.JPG.jpeg" alt="Deskripsikan kegiatan di foto ini">
+  </div>
+  <div class="gallery-item gallery-item--tall">
+    <img src="assets/IMG_3758.JPG.jpeg" alt="Deskripsikan kegiatan di foto ini">
+  </div>
+  <div class="gallery-item gallery-item--tall">
+    <img src="assets/IMG_3759.JPG.jpeg" alt="Deskripsikan kegiatan di foto ini">
+  </div>
+  <div class="gallery-item gallery-item--tall">
+    <img src="assets/IMG_3760.JPG.jpeg" alt="Deskripsikan kegiatan di foto ini">
+  </div>
+  <div class="gallery-item gallery-item--tall">
+    <img src="assets/IMG_3761.JPG.jpeg" alt="Deskripsikan kegiatan di foto ini">
+  </div>
+  <div class="gallery-item gallery-item--tall">
+    <img src="assets/IMG_3762.JPG.jpeg" alt="Deskripsikan kegiatan di foto ini">
+  </div>
+  <div class="gallery-item gallery-item--tall">
+    <img src="assets/IMG_3763.JPG.jpeg" alt="Deskripsikan kegiatan di foto ini">
+  </div>
+</div>
+  </section>
+
+  <div class="tile-divider tile-divider--flip" aria-hidden="true"></div>
+
+  <!-- ============ KONTAK ============ -->
+  <section class="section section--dark" id="kontak">
+    <div class="wrap section-grid section-grid--contact">
+      <div>
+        <span class="section-eyebrow section-eyebrow--light">Ada Pertanyaan?</span>
+        <h2 class="light-heading">Hubungi Kami</h2>
+        <p class="light-body">Warga atau pengunjung yang ingin tahu lebih lanjut tentang Doplang bisa menghubungi kami lewat kontak berikut.</p>
+
+        <ul class="contact-list">
+          <li>
+            <strong>Alamat</strong>
+            <span>Jambewangi, RT 03 /RW 07, Girikarto, Panggang, Gunungkidul, DIY</span>
+          </li>
+          <li>
+            <strong>Telepon / WhatsApp</strong>
+            <span>081326158659</span>
+          </li>
+          <li>
+            <strong>Media Sosial</strong>
+            <span> - </span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="map-frame" role="img" aria-label="Peta lokasi Doplang belum ditautkan">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7900.7183542164685!2d110.43346594069432!3d-8.064797667851746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7baec61b0e0217%3A0x521c9c6c30bbea03!2sDoplang%2C%20Girikarto%2C%20Kec.%20Panggang%2C%20Kabupaten%20Gunungkidul%2C%20Daerah%20Istimewa%20Yogyakarta!5e0!3m2!1sid!2sid!4v1787575966662!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <p>&copy; <span id="year"></span> Padukuhan Doplang, Girikarto, Panggang, Gunungkidul.</p>
+    <p class="footer-sub">Dibuat dalam rangka program KKN &mdash; </p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
