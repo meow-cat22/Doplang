@@ -571,11 +571,11 @@ img{ max-width: 100%; display: block; }
 .footer-credit{
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 14px;
 }
 .footer-credit img{
-  width: 28px;
-  height: 28px;
+  width: 48px;
+  height: 48px;
   object-fit: contain;
   flex-shrink: 0;
 }
